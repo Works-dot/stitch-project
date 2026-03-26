@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="hu"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#4d5b94",
+              "surface-tint": "#2151da",
+              "primary-fixed": "#dce1ff",
+              "on-background": "#191c1e",
+              "surface-dim": "#d8dadc",
+              "on-tertiary-container": "#ffc9b7",
+              "on-surface": "#191c1e",
+              "surface-container": "#eceef0",
+              "on-primary-container": "#cad3ff",
+              "tertiary-fixed": "#ffdbcf",
+              "background": "#f7f9fb",
+              "outline": "#747686",
+              "inverse-on-surface": "#eff1f3",
+              "surface": "#f7f9fb",
+              "tertiary-fixed-dim": "#ffb59c",
+              "error-container": "#ffdad6",
+              "surface-container-highest": "#e0e3e5",
+              "surface-container-low": "#f2f4f6",
+              "tertiary-container": "#a73400",
+              "secondary-fixed": "#dce1ff",
+              "primary-fixed-dim": "#b7c4ff",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#001551",
+              "on-secondary-container": "#3d4c83",
+              "inverse-primary": "#b7c4ff",
+              "surface-bright": "#f7f9fb",
+              "on-tertiary-fixed": "#390c00",
+              "on-tertiary-fixed-variant": "#832700",
+              "secondary-fixed-dim": "#b7c4ff",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed-variant": "#35437b",
+              "primary": "#0037b0",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "on-surface-variant": "#434655",
+              "on-error": "#ffffff",
+              "primary-container": "#1d4ed8",
+              "outline-variant": "#c4c5d7",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#b0befe",
+              "surface-container-high": "#e6e8ea",
+              "on-secondary-fixed": "#03164d",
+              "on-primary-fixed-variant": "#0039b5",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#e0e3e5",
+              "tertiary": "#7f2500",
+              "inverse-surface": "#2d3133"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-slate-200/20 dark:border-slate-800/20 shadow-sm shadow-blue-900/5">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-blue-700 dark:text-blue-500 cursor-pointer transition-transform scale-95 active:scale-90">menu</span>
+<span class="text-xl font-bold tracking-[0.2em] text-blue-700 dark:text-blue-500">ATELIER</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-blue-700 dark:text-blue-400 font-semibold transition-colors duration-200" href="#">Catalog</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200" href="#">Search</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200" href="#">Favorites</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200" href="#">Profile</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-blue-700 dark:text-blue-500 cursor-pointer transition-transform scale-95 active:scale-90">shopping_cart</span>
+</div>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative w-full h-[618px] flex items-center overflow-hidden bg-on-background">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="Sleek dark blue premium sedan parked in a minimalist concrete architectural space with dramatic side lighting and soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIzNI3aSaEn8h1LPmErh9aXwo1okXvYOQKDCgGQvv66EtC8fkz49K9ENfWNTdMTcmAaq_XZ9dVh_Lt6bid24zip4_KKNU05mqhgmZMmzpf4dQH3knWvQGCATG3lId8RTYIaKC_ufEinoLp0ITx3pGqkmZ0ZhPTllDOdBUIctQPP9QLvkRFBDYBSNRtursvVaNkObOUTrdsr2ROvdbqV1zE3yQH8GM6cerBz_fuhCpnJ3uzb34ylMdZdY5qI8a5D-FU-UD5OgeLvRM"/>
+</div>
+<div class="container mx-auto px-6 relative z-10">
+<div class="max-w-2xl">
+<h1 class="text-white text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1]">
+                        Az innováció <br/><span class="text-primary-fixed-dim">új korszaka</span>
+</h1>
+<p class="text-surface-container-highest text-lg md:text-xl mb-10 max-w-lg leading-relaxed font-light">
+                        Fedezze fel legújabb modelljeinket, ahol a mérnöki precizitás és az esztétikum találkozik.
+                    </p>
+<button class="bg-primary hover:bg-on-primary-fixed-variant text-white px-8 py-4 rounded-md font-semibold transition-all shadow-xl shadow-primary/20 flex items-center gap-3">
+                        Készlet megtekintése
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Catalog Filter -->
+<section class="py-12 bg-surface">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div>
+<h2 class="text-on-surface text-3xl font-bold tracking-tight mb-2">Autó Kínálat</h2>
+<p class="text-on-surface-variant font-medium">Válassza ki az Önnek megfelelő kategóriát</p>
+</div>
+<!-- Segmented Tabs -->
+<div class="flex border-b border-outline-variant/20 gap-8 overflow-x-auto pb-px">
+<button class="pb-4 text-primary font-bold border-b-2 border-primary transition-all whitespace-nowrap">Összes</button>
+<button class="pb-4 text-on-surface-variant/60 font-medium hover:text-on-surface transition-all whitespace-nowrap">SUV</button>
+<button class="pb-4 text-on-surface-variant/60 font-medium hover:text-on-surface transition-all whitespace-nowrap">Szedán</button>
+<button class="pb-4 text-on-surface-variant/60 font-medium hover:text-on-surface transition-all whitespace-nowrap">Elektromos</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="pb-24 bg-surface">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.02)] transition-all hover:shadow-[0_30px_60px_rgba(0,0,30,0.06)] hover:-translate-y-1">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern high-performance blue sports coupe showing aerodynamic lines and premium metallic finish in a studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Z3s1zOQq2PMFSihlXvu6Wea_l-bjaksUWclxU-20OCJq_mjMjCKuBqI6raE914m-Ubn-4JPvtMl4t9SclLhwW85KEw54bqwlXn7eIZ6Bc7YwOCSbz945lDY5TECzhkA6G20TgTjLgULL-yay6GBHE4uTnBDKHe3bSw8ZJdryS4ffwfcdFov0rzKVxh0iGN6oKPK2BdfWnlBW1SB5bX4JeRNtqqPA-09lrKFAzxB2hy8WAH_FAOcBlNdXzRuZUNd_ccBJyF5YOCs"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-on-surface">Zenith X-Series</h3>
+<p class="text-sm text-on-surface-variant/80">Executive Sport Sedan</p>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Új Modell</span>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold mb-1">Gyorsulás</p>
+<p class="text-on-surface font-semibold">3.8 <span class="text-xs font-normal">sec</span></p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold mb-1">Végsebesség</p>
+<p class="text-on-surface font-semibold">280 <span class="text-xs font-normal">km/h</span></p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<p class="text-2xl font-bold text-primary">42.500.000 Ft</p>
+<button class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Megtekintés
+                                    <span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.02)] transition-all hover:shadow-[0_30px_60px_rgba(0,0,30,0.06)] hover:-translate-y-1">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury full-size SUV in metallic silver driving on a scenic coastal road with soft afternoon sunlight reflecting off the body" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyQML5dI2633vmR6oBRE9kuO0kigypgJ3udBBSZ1RrHM6rVU_7IBaKqmMPFzd6xd7mQLYaGZr3F9ziMA02E4c4qJd865l8aMoRaPUv_VYqaLsKmD-dBIjFju4cPQ7zGjn7wxlVLwBgOy1fcTmXdo0FRIp9uPgWhDJr7FTnffl8w7zHm_EKbKzdVlMNhRur_JAJpi6bWejO6pOThN7hr7Jd4NeQsoMLT3HKeydMXVQsjyctbPS1tayjOIeyKwZg5WFpV4aIIoxtI2I"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-on-surface">Titan RS</h3>
+<p class="text-sm text-on-surface-variant/80">Adventure Performance SUV</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold mb-1">Gyorsulás</p>
+<p class="text-on-surface font-semibold">4.5 <span class="text-xs font-normal">sec</span></p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold mb-1">Végsebesség</p>
+<p class="text-on-surface font-semibold">250 <span class="text-xs font-normal">km/h</span></p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<p class="text-2xl font-bold text-primary">38.900.000 Ft</p>
+<button class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Megtekintés
+                                    <span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.02)] transition-all hover:shadow-[0_30px_60px_rgba(0,0,30,0.06)] hover:-translate-y-1">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Futuristic white electric sedan with sleek led lighting and minimalist design parked in a clean white studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdjdbsyJ6fgJRELgR-R4z_Z3k2e8OVyTLwHuSPbZSSYrCrjFqTaxeiTjrO2SlEV_WlDupsR07OAZK22Ysc0oiZbFB0LZ-x-jVRJkf9xLjHT6LdQL6ox-DrD2-6JmhtG3lICWNCdfq1q_9uUJk0qnPS4P2XrSulca451LhME6Mjuey7loHt7UR-qc9VEmKtzPKEwsq5e3bGOULGuBQ51xtiup7kbuXKffI1rGJuOsnIG_bk8kBYKt-Nk8pYSiYeV01_bQUv4-WaniY"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-on-surface">Noble E-Class</h3>
+<p class="text-sm text-on-surface-variant/80">Next-Gen Pure Electric</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Elektromos</span>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold mb-1">Gyorsulás</p>
+<p class="text-on-surface font-semibold">3.2 <span class="text-xs font-normal">sec</span></p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase text-on-surface-variant font-bold mb-1">Végsebesség</p>
+<p class="text-on-surface font-semibold">240 <span class="text-xs font-normal">km/h</span></p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<p class="text-2xl font-bold text-primary">51.200.000 Ft</p>
+<button class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Megtekintés
+                                    <span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-safe bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-900 shadow-[0_-4px_20px_rgba(0,0,0,0.03)] z-50">
+<a class="flex flex-col items-center justify-center text-blue-700 dark:text-blue-400 border-t-2 border-blue-700 pt-2 pb-2" href="#">
+<span class="material-symbols-outlined">directions_car</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">Catalog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 pb-2 hover:text-blue-500 transition-all" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 pb-2 hover:text-blue-500 transition-all" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">Favorites</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 pb-2 hover:text-blue-500 transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+<!-- Footer Space for Bottom Nav -->
+<div class="h-20 md:hidden"></div>
+</body></html>
